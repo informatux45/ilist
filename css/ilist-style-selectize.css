@@ -1,0 +1,115 @@
+
+.ilist-select {
+	border-bottom: 1px solid #e8e8e8;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.ilist-select:last-child {
+	border-bottom: 0 none;
+}
+.ilist-select select, .ilist-select input, .ilist-select .selectize-control {
+	width: 100%;
+}
+.ilist-select > *:first-child {
+	margin-top: 0;
+}
+.ilist-select > *:last-child {
+	margin-bottom: 0;
+}
+.ilist-select .value {
+	margin: 0 0 10px 0;
+	font-size: 12px;
+}
+.ilist-select .value span {
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+.theme-selector {
+	margin-top: 10px;
+	font-size: 13px;
+}
+.theme-selector:before {
+	content: 'Themes: ';
+}
+.theme-selector a {
+	margin: 0 5px;
+}
+.theme-selector a.active {
+	color: #202020;
+	font-weight: bold;
+}
+#ilist-wrapper {
+	margin: 0;
+}
+#ilist-wrapper > * {
+	padding: 0;
+}
+pre {
+	background: #f8f8f8;
+	border: 1px solid #f2f2f2;
+	padding: 10px;
+	font-size: 12px;
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+input[type=button] {
+	margin: 0 10px 0 0;
+	padding: 6px 10px;
+	color: #606060;
+	background: #e0e0e0;
+	border: 0 none;
+	width: auto;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-font-smoothing: antialiased;
+}
+.buttons {
+	margin: 0 0 25px 0;
+}
+input[type=button]:hover {
+	background: #dadada;
+}
+.selectize-input a.remove::before {
+	color: black !important;
+}
+.ilist-select-infos img {
+	width: 75px;
+	height: 75px;
+	float: left;
+	margin-right: 1em;
+	border: 1px solid lightgray;
+}
+.ilist-select-infos span.name {
+	font-size: 1.2em;
+}
+.ilist-select-infos span.desc {
+	font-style: italic;
+}
+.ilist-select-infos span.price {
+	font-weight: bold;
+}
+.selectize-dropdown-content {
+	max-height: 300px;
+}
+
+@media only screen and (max-width : 320px) {
+	#ilist-wrapper {
+		margin: 0;
+	}
+	#ilist-wrapper > * {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.ilist-select {
+		padding: 20px;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+}

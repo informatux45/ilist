@@ -1,0 +1,12 @@
+# Fichiers d'environnement / OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Journal de debogage ecrit a l'execution quand l'option
+# "ilist_debug_log" est active (ilist_write_log()).
+log.txt
+
+# Logs generes a l'execution
+*.log

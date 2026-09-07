@@ -1,0 +1,13 @@
+# Le journal de débogage (option "Debug log") est écrit dans log.txt, à la
+# racine du plugin, donc dans une URL publique et prévisible. Il contient des
+# données de commandes et de listes : on en interdit l'accès direct par HTTP.
+# Il reste consultable depuis l'administration du plugin (ILIST > Options),
+# qui le lit côté serveur.
+<FilesMatch "\.(txt|log|po|mo|pot)$">
+	Require all denied
+</FilesMatch>
+
+# readme / license restent lisibles s'ils existent
+<FilesMatch "^(readme|license)\.txt$">
+	Require all granted
+</FilesMatch>

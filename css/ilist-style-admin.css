@@ -1,0 +1,535 @@
+/* ****************************************************** */
+/*                Usage SVG Icon Ilist                    */
+/* ------------------------------------------------------ */
+/* <div class="ilist-icons icon-ilist"></div> */
+/* ****************************************************** */
+.icon-ilist {
+	background: url("../images/icon-ilist.png") 50% 50% no-repeat;
+	background-size: 100%;
+}
+.ilist-icons {
+	/*display: inline-block;*/
+}
+.ilist-icons-500 {
+	width: 528px;
+	height: 528px;
+}
+.ilist-icons-400 {
+	width: 428px;
+	height: 428px;
+}
+.ilist-icons-300 {
+	width: 328px;
+	height: 328px;
+}
+.ilist-icons-200 {
+	width: 228px;
+	height: 228px;
+}
+.ilist-icons-100 {
+	height: 234px;
+	margin: 0 auto;
+	width: 159px;
+}
+.ilist-icons-50 {
+	width: 50px;
+}
+.ilist-red {
+	color: red;
+}
+.ilist-green {
+	color: green;
+}
+.ilist-grey {
+	color: grey;
+}
+.ilist-credits, .ilist-support {
+	float: left;
+	margin-right: 20px;
+}
+.ilist-decnone {
+	text-decoration: none;
+}
+.select2-container {
+	width: 500px !important;
+}
+
+/* --- Cards --- */
+.ilist-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  min-width: 170px;
+	max-width: 250px;
+	float: left;
+	margin: 0 1em 0 0;
+	padding: 0 0 1em 0;
+	border: 1px solid grey;
+	border-radius: 7px;
+	background-color: oldlace;
+	text-align: center;
+}
+.ilist-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.ilist-container {
+  padding: 2px 16px;
+}
+.ilist-clear {
+	clear: both;
+}
+.ilist-card h3 {
+	font-weight: normal;
+	font-size: 2em;
+	margin: -0.5em 0 0 0;
+}
+
+.settings_page_ilist-ilist div.wrap > h2 {
+	background: rgba(0, 0, 0, 0) url("../images/icon-ilist.png") no-repeat scroll 1% 10% / 5% auto;
+	display: inline-block;
+	padding: 0 0 0px 39px !important;
+}
+div.page_ilist > h2 {
+	background: rgba(0, 0, 0, 0) url("../images/icon-ilist.png") no-repeat scroll 0% 0px / 20px auto;
+	display: inline-block;
+	padding: 0 0 15px 30px;
+}
+div.page_ilist > h1 {
+	background: rgba(0, 0, 0, 0) url("../images/icon-ilist.png") no-repeat scroll 0% 0px / 20px auto;
+	display: inline-block;
+	padding: 0 0 5px 35px;
+}
+
+h2 span#ilist-span-title {
+	background: rgba(0, 0, 0, 0) url("../images/icon-ilist.png") no-repeat scroll 0% 0% / 12% auto;
+	display: inline-block;
+	padding: 0 0 10px 35px;
+	border-color: transparent;
+	font-size: 35px;
+	font-weight: 600;
+	margin: 0;
+	line-height: 1.3;
+}
+html.wp-toolbar body.wp-admin.wp-core-ui.js.theme-shophistic-lite.blackbar.wc-wp-version-gte-53.wc-wp-version-gte-55.ilist-kado_page_ilist_list.auto-fold.admin-bar.branch-5-9.version-5-9-1.admin-color-fresh.locale-fr-fr.customize-support.slate-admin-theme.svg.e--ua-firefox div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li#toplevel_page_ilist.wp-has-submenu.wp-has-current-submenu.wp-menu-open.menu-top.toplevel_page_ilist ul.wp-submenu.wp-submenu-wrap li
+/* Menu hide instead of add "null" to $parent_slug in add_submenu_page */
+/* Allows to keep the menu opened */
+#toplevel_page_ilist li.wp-first-item,
+#toplevel_page_ilist li:nth-child(14), /* Ajouter une liste */
+#toplevel_page_ilist li:nth-child(16), /* Ajouter un nouveau statut */
+#toplevel_page_ilist li:nth-child(17), /* Les produits */
+#toplevel_page_ilist li:nth-child(18)  /* Modifier le produit */
+{
+	display: none;
+}
+#toplevel_page_ilist div.dashicons-before img {
+	padding: 6px 0 0 0 !important;
+}
+/* --- Color text in admin --- */
+.buy_shop {
+	color: #7ad03a;
+}
+.buy_internet {
+	color: #00ced1;
+}
+.buy_other {
+	color: #ce8200;
+}
+.ilist_for_sale {
+	color: #ff6600;
+}
+.ilist_participation {
+	color: #ff6600;
+}
+/* --- Other styles --- */
+.ilist-normal {
+	font-weight: normal !important;
+}
+.ilist-italic {
+	font-style: italic !important;
+}
+.ilist-style-italic {
+	font-weight: normal !important;
+	font-style: italic !important;
+	font-size: 0.8em !important;
+}
+.ilist-style-description {
+	color: darkgrey;
+	font-style: italic;
+	font-weight: normal;
+}
+.ilist-font-09 {
+	font-size: 0.9em !important;
+}
+a.ilist-doc-help {
+	color: #7FFF00;
+	text-decoration: none;
+	margin-right: 5px;
+}
+a.ilist-doc-help:hover {
+	color: white;
+}
+
+i.ilist-nbproduct {
+	color: blue;
+	font-size: 1.7em;
+	position: relative;
+}
+i.ilist-nbproduct span.ilist-nbproduct {
+	color: white;
+	position: absolute;
+	font-size: 0.6em;
+	margin: 0.3em 0 0 -1em;
+}
+/* --- Ilist message Help --- */
+.ilist_help_message {
+	display: flex;
+	align-items:center;
+	background: rgba(245,105,131, 0.1);
+	border: 1px solid #f56983;
+	padding: 0.5em 10px 0;
+	margin: 1em 0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.ilist_help_message img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+/* --- Ilist products list --- */
+.ilist_total_price_row {
+	float: left;
+	background-color: white;
+	padding: 0.4em 1em;
+	border: 1px solid burlywood;
+	border-radius: 12px;
+	margin: 0 1em 0 0;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+/* --- Ilist support --- */
+.ilist-support-img img {
+	border: 1px solid lightgrey;
+	margin: 15px 0 0 0;
+}
+
+/* --- Ilist form --- */
+.cssformcolor {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAEklEQVQYlWNgoBL4T7GCoW8FAGEXBfvNSmHvAAAAAElFTkSuQmCC) repeat !important;
+}
+form#lists-table {
+	/*margin-right: -20px;*/
+}
+
+/* --- Loader --- */
+#ilist_create_product_loader {
+	display: none;
+}
+
+/* --- Modal box --- */
+/* The Modal (background) */
+#ilist_modal {
+	cursor: pointer;
+	background: #2ea2cc;
+	border: 1px solid #2ea2cc;
+	color: #ffffff;
+	padding: 0.5em 1em;
+}
+#ilist_modal:hover {
+	background: white;
+	border: 1px solid #2ea2cc;
+	color: #2ea2cc;
+}
+.ilist-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100000; /* Sit on top */
+  padding: 70px 100px 100px 45px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.ilist-modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 100%;
+	height: 80%;
+	overflow-y: auto;
+	max-width: 500px;
+}
+/* The Close Button */
+.ilist-modal-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.ilist-modal-close:hover,
+.ilist-modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ilist-modal-content p {
+	font-size: 14px;
+}
+button#ilist-modal {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+	border: 2px solid #4CAF50;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+	border-radius: 7px;
+}
+.ilist-modal-content ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+button#ilist-modal:hover {
+  background-color: transparent;
+	border: 2px solid #4CAF50;
+  color: #4CAF50;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.ilist-back-to-home {
+	background-color: #2271b1 !important;
+	border: 1px solid #2271b1 !important;
+	color: #f6f7f7 !important;
+}
+.ilist-back-to-home:hover {
+	background-color: #f6f7f7 !important;
+	border: 1px solid #2271b1 !important;
+	color: #2271b1 !important;
+}
+
+/* --- Ilist License infos --- */
+.ilist-text-primary {
+	color: #1e8cbe;
+}
+.ilist-label-help {
+	color: lightgrey;
+	font-size: 0.8em;
+}
+.ilist-infos {
+	background-color: lightblue;
+	border-left: 6px solid lightslategrey;
+}
+.ilist-button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: forestgreen;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px 16px;
+	width: auto;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+.ilist-button:hover {
+	color: #FFF;
+}
+.ilist-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.ilist-button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.ilist-button:hover span {
+	padding-right: 25px;
+}
+.ilist-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+.ilist-license {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.ilist-license-error,
+.ilist-license-blocked,
+.ilist-license-expired
+{
+	color: red;
+}
+.ilist-license-success,
+.ilist-license-active
+{
+	color: green;
+}
+.ilist-license-pending {
+	color: orange;
+}
+.ilist-license-info {
+	border: 1px solid black;
+	padding: 10px;
+	background-color: #fdf5e6;
+	display: block;
+	width: max-content;
+	overflow: hidden;
+	line-height: 1.5em;
+	min-width: 400px;
+}
+.ilist-license-info h2 {
+	margin: 0;
+}
+.ilist-license-tbl span {
+	width: 150px;
+	display: block;
+	float: left;
+}
+.ilist-sand, .ilist-hover-sand:hover,
+.ilist-notice-sand, .ilist-hover-notice-sand:hover
+{
+	color: #000 !important;
+	background-color: #fdf5e6 !important;
+}
+.ilist-hover-red:hover,
+.ilist-notice-red, .ilist-hover-notice-red:hover
+{
+	color: #000 !important;
+	background-color: #FFBFCC !important;
+}
+.ilist-leftbar {
+	border-left: 6px solid #ccc !important;
+}
+.ilist-panel {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+.ilist-panel {
+	padding: 0.01em 16px;
+}
+.ilist-panel p {
+	font-size: 16px;
+	overflow: hidden;
+}
+.ilist-panel p.user {
+	font-size: 12px;
+	overflow: hidden;
+}
+.ilist-panel p img {
+	float: left;
+	margin: 0 10px 0;
+}
+.ilist-panel p i {
+	margin: 8px 0 0;
+	display: block;
+}
+.ilist-banner {
+	max-width: 600px;
+	width: 100%;
+}
+.ilist-notice-logo {
+	height: 70px;
+	float: left;
+	padding: 12px 10px 0 0;
+}
+.ilist-notice-logo-50 {
+	height: 50px;
+	float: left;
+	padding: 12px 10px 0 0;
+}
+.ilist-nochange {
+	pointer-events: none;
+}
+
+/* Color picker */
+.square .clr-field button,
+.circle .clr-field button {
+	width: 22px;
+	height: 22px;
+	left: 5px;
+	right: auto;
+	border-radius: 5px;
+}
+.square .clr-field input,
+.circle .clr-field input {
+	padding-left: 36px;
+}
+.circle .clr-field button {
+	border-radius: 50%;
+}
+.full .clr-field button {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+/* --- Credits --- */
+.informatux_gs_image {
+	max-width: 250px;
+}
+.informatux_outerdiv {
+  height: auto;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+.informatux_outer {
+  border: solid 1px lightgrey;
+  width: 250px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5em 1em 0;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.12);
+}
+.informatux_outer.informatux_last {
+  margin: 0 0 1em 0 !important;
+}
+.informatux_outer .informatux_centered {
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+  margin-top: -4px;
+}
+.informatux_outer p {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  padding: 0.2em 1em 1em 1em;
+  margin: 0;
+  text-align: center;
+}
+
+/* Admin content editable */
+.ilist-note-editable-buttons {
+	display: none;
+}
+.ilist-note-editable {
+	padding: 2px;
+	margin-bottom: 2px;
+}

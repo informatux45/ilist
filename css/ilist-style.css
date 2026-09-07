@@ -1,0 +1,548 @@
+/* ---------------------------------- */
+/* --- Front style plugin "ILIST" --- */
+/* ---------------------------------- */
+
+/* --- General --- */
+.ilist-clear {
+	clear: both;
+}
+.ilist-description {
+	font-style: italic;
+	color: gray;
+	font-size: 0.9em;
+}
+.ilist-bold {
+	font-weight: bold;
+}
+.ilist_user_logged_out {
+	margin: 0 0 1em 0;
+}
+.ilist-acenter {
+	text-align: center;
+}
+.ilist-share-h4 {
+	margin: 1em 0;
+}
+.ilist-table {
+	width: 100%;
+}
+
+/* --- Spinner --- */
+.ilist-spinner,
+.ilist-dnone {
+	display: none;
+}
+.ilist-spinner-is-active {
+	display: initial;
+}
+
+/* --- Form Alerts --- */
+.alert {
+	border: 1px solid transparent;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.alert-success {
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #3c763d;
+}
+.alert-danger {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: #a94442;
+}
+
+/* --- Image thumbnail --- */
+td.ilist-image div.custom-img {
+	width: 50px;
+	height: 50px;
+	border: 1px solid lightgray;
+	background-size: cover;
+	cursor: pointer;
+}
+
+/* --- Don't display 'view cart' after AJAX request (add to cart in view list) --- */
+a.added_to_cart {
+	display: none !important;
+}
+
+/* --- Form ilistcart --- */
+form.ilistcart select {
+	max-width: 100%;
+	width: 90%;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+form.ilistcart button.add_to_cart_button {
+	max-width: 100%;
+	width: 90%;
+}
+tr.ilist_pot_tr {
+	border-bottom: 1px solid lightgrey;
+}
+
+/* --- Live search (list user logged in) --- */
+#loading {
+	display: none;
+	float: left;
+	margin: 0 0.5em 0 0;
+}
+#result {
+    padding: 10px;
+    display: none;
+    margin-top: -10px;
+    border-top: 0px;
+    border: 1px #CCC solid;
+    background-color: white;
+	max-height: 400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+input[type=button] {
+	margin: 0 10px 0 0;
+	padding: 6px 10px;
+	color: #606060;
+	background: #e0e0e0;
+	border: 0 none;
+	width: auto;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-font-smoothing: antialiased;
+}
+.ilist-select {
+	border-bottom: 1px solid #e8e8e8;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: white;
+}
+.ilist-select:last-child {
+	border-bottom: 0 none;
+}
+.ilist-select select, .ilist-select input, .ilist-select .selectize-control {
+	width: 100%;
+}
+.ilist-select > *:first-child {
+	margin-top: 0;
+}
+.ilist-select > *:last-child {
+	margin-bottom: 0;
+}
+.ilist-select #keysearch {
+	margin: 0 0 10px 0;
+	font-size: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.ilist-select #keysearch span {
+	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+}
+#ilist-wrapper {
+	margin: 0;
+}
+#ilist-wrapper > * {
+	padding: 0;
+}
+.ilist-select-infos {
+	padding: 5px;
+	line-height: 1.45em;
+	clear: both;
+	overflow: auto;
+}
+.ilist-select-infos img {
+	width: 75px;
+	height: 75px;
+	float: left;
+	margin-right: 1em;
+	border: 1px solid lightgray;
+}
+.ilist-select-infos span.name {
+	font-size: 1em;
+}
+.ilist-select-infos span.desc {
+	color: #aaa;
+	font-size: 0.8em;
+	font-style: italic;
+}
+.ilist-select-infos span.price {
+	font-weight: bold;
+}
+.ilist-select-infos span.show, .ilist-select-infos span.toadd {
+	float: left;
+}
+.ilist-select-infos span.show a {
+	font-weight: normal;
+	color: white;
+	background-color: #7f7f7f;
+	padding: 7px;
+	font-size: 12px;
+	margin: 0.3em 1em 0 0;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.ilist-select-infos span.show a:hover {
+	color: white;
+	background-color: black;
+}
+.ilist-select-infos span.toadd button {
+	font-weight: normal;
+	color: white;
+	background-color: #7f7f7f;
+	padding: 0.12em 4px;
+	font-size: 12px;
+	margin: 0;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.ilist-select-infos span.toadd button:hover {
+	color: white;
+	background-color: black;
+}
+.ilist-select-infos:hover {
+	background: #eaeaea;
+	cursor: pointer;
+}
+
+.ilist-share {
+	text-align: center;
+}
+.ilist-share-buttons a img {
+	width: 30px !important;
+}
+.ilist-share-nodisplay {
+	display: none;
+}
+
+.spinner {
+	height: 20px;
+	position: relative;
+	width: 20px;
+	margin: 4px 0 0 0;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@media only screen and (max-width : 320px) {
+	#ilist-wrapper {
+		margin: 0;
+	}
+	#ilist-wrapper > * {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.ilist-select {
+		padding: 20px;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+}
+
+/* --- Create / Update form list --- */
+#ilist_password_help, #ilist_email_help {
+	display: block;
+	clear: both;
+	font-style: italic;
+}
+#ilist_password {
+	max-width: 200px;
+	width: 100%;
+	margin-bottom: 0;
+	margin-right: 1em;
+	float: left;
+}
+#ilist_password_confirm {
+	max-width: 200px;
+	width: 100%;
+	margin-bottom: 0;
+	float: left;
+}
+#ilist_remove_image, #ilist_password_remove {
+	float: left;
+	width: auto;
+	height: auto;
+	margin-right: 0.5em;
+}
+#ilist_remove_image_label, #ilist_password_remove_label {
+	font-weight: normal;
+}
+#ilist_image_display {
+	max-width: 200px;
+	max-height: 200px;
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* --- Format image (theme) --- */
+#ilist-format-image {
+	background-size: cover;
+	padding: 2em;
+	color: gray;
+	min-height: 200px;
+}
+.ilist-format-image-h5 {
+	background: rgba(255,255,255,0.9);
+	padding: 2em 1.5em;
+	border-radius: 10px;
+	width: 50%;
+	font-weight: normal;
+	font-size: 1em;
+}
+.ilist-format-image-title {
+	font-weight: bold;
+	color: black;
+}
+.ilist-format-image-description {
+	font-weight: normal;
+	font-style: italic;
+}
+.ilist-format-image-theme-2 {
+	width: 100%;
+}
+.ilist-format-image-theme-3 {
+	margin-left: 50%;
+}
+@media screen and (max-width: 640px) {
+  .ilist-format-image-h5,
+	.ilist-format-image-theme-3 {
+		width: 100%;
+	}
+}
+
+/* --- Modal boxes --- */
+.ilist_modal_box {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 270px;
+  /*margin-right: 25px;*/
+  /* for close-button */
+  padding: 10px;
+  /*background-color: #da8025;*/
+  display: none;
+}
+.ilist_modal_box h2,
+.ilist_modal_box h3 {
+  color: #fff;
+  font-weight: bold;
+}
+.ilist_modal_box h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+.ilist_modal_box h3 {
+  margin: 5px 0;
+  font-size: 1.1em;
+  text-align: right;
+}
+.ilist_modal_box p {
+  color: #fff;
+  font-size: 1em;
+}
+.ilist_modal_box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 5px auto;
+}
+.ilist_modal_box .plainmodal-close {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: -15px;
+  top: -15px;
+  /*background: url("../images/plainmodal-close-default.png") no-repeat;*/
+}
+.ilist_modal_box .plainmodal-close:hover {
+  background-position: -45px 0 !important;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .ilist_modal_box {
+    min-width: 70%;
+    /*margin-right: 0;*/
+    /*height: 400px;*/
+    padding: 25px;
+  }
+  .ilist_modal_box:after {
+    /* clearfix */
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .ilist_modal_box img {
+		max-width: 45% !important;
+		float: left !important;
+		margin: 0 1.5em 0 0 !important;
+  }
+  .ilist_modal_box h2 {
+		font-size: 1.8em;
+		line-height: 1.5em;
+		display: initial;
+		margin: 0 0 1em;
+  }
+  .ilist_modal_box h3 {
+    margin: 10px 0 15px;
+    font-size: 1em;
+		line-height: 1em;
+		font-style: italic;
+		font-weight: 300;
+		display: initial;
+		text-align: left;
+  }
+  .ilist_modal_box h4 {
+		color: #fff;
+		display: inline-block;
+		font-size: 2em;
+		line-height: 1em;	
+  }
+  .ilist_modal_box p {
+		font-size: 0.9em;
+		line-height: 1.4em;
+  }
+  .ilist_modal_box img {
+    display: inline;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+}
+
+/* ----- Adjust TABLE ----- */
+.ilist-addtocart,
+.ilist-action,
+.ilist-price,
+.ilist-date,
+.ilist-creator-name
+{
+	text-align: center;
+}
+
+/* --- MODAL BOX  (confirm / alert) --- */
+/* The Modal (background) */
+.ilist-modal-alert {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 10000; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.ilist-modal-alert-container {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 100%;
+		max-width: 500px;
+}
+/* The Close Button */
+.ilist-modal-alert-close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.ilist-modal-alert-close:hover,
+.ilist-modal-alert-close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* --- Modal Buttons --- */
+.ilist-button-alert-accept {
+		background-color: #4CAF50;
+		border: 1px solid #4CAF50;
+		color: white;
+		padding: 0.5em 2em;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 0 0.5em 0 0;
+		-o-transition:color .2s ease-out, background .5s ease-in;
+		-ms-transition:color .2s ease-out, background .5s ease-in;
+		-moz-transition:color .2s ease-out, background .5s ease-in;
+		-webkit-transition:color .2s ease-out, background .5s ease-in;
+		/* ...and now override with proper CSS property */
+		transition:color .2s ease-out, background .5s ease-in;
+}
+.ilist-button-alert-accept:hover {
+		background-color: white;
+		border: 1px solid #4CAF50;
+		color: #4CAF50;
+		cursor: pointer;
+}
+.ilist-button-alert-reject {
+		background-color: red;
+		border: 1px solid red;
+		color: white;
+		padding: 0.5em 2em;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 0 0 0 0.5em;
+		-o-transition:color .2s ease-out, background .5s ease-in;
+		-ms-transition:color .2s ease-out, background .5s ease-in;
+		-moz-transition:color .2s ease-out, background .5s ease-in;
+		-webkit-transition:color .2s ease-out, background .5s ease-in;
+		/* ...and now override with proper CSS property */
+		transition:color .2s ease-out, background .5s ease-in;
+}
+.ilist-button-alert-reject:hover {
+		background-color: white;
+		border: 1px solid red;
+		color: red;
+		cursor: pointer;
+}

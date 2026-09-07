@@ -1,0 +1,105 @@
+.ilist_widget_p {
+    display: flex;
+    align-items:center;
+}
+.ilist_widget_p {
+    font-style: italic;
+    margin: 0 0 1em 0;
+    color: #72777c;
+}
+.ilist_widget_p img {
+    margin: 0 0.5em 0 0;
+}
+table.ilist_widget_table {
+    /*border-bottom: 1px solid #ddd;*/
+    /*border-left: 1px solid #ddd;*/
+    /*border-right: 1px solid #ddd;*/
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+table.ilist_widget_table thead td {
+	font-weight: bold;
+	/*background-color: #1d2327;*/
+	/*color: white;*/
+    text-transform: uppercase;
+}
+table.ilist_widget_table td {
+    /*border-bottom: 1px solid #ddd;*/
+    padding: 10px 0;
+}
+.ilist_widget_products {
+    text-align: center;
+    font-weight: bold;
+}
+table.ilist_widget_table a {
+    text-decoration: none;
+}
+i.fa-rounded-bg {
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #888;
+    padding: 0.5em;
+}
+
+/* --- TABLE RESPONSIVE --- */
+@media screen and (max-width: 780px) {
+    table.ilist_widget_table {
+        width: 100% !important;
+    }
+    table.ilist_widget_table thead {
+        display: none !important;
+    }
+    table.sales-jh tr.sales-first {
+        display: none !important;
+    }
+    table.ilist_widget_table tr:nth-of-type(1n) {
+        /*background-color: #C0996B !important;*/
+    }   
+    table.ilist_widget_table tr td:first-child {
+        /*background: #f0f0f0 !important;*/
+        /*font-weight: bold !important;*/
+        /*font-size: 1.3em !important;*/
+		font-weight: bold;
+    }
+	table.ilist_widget_table td.ss-icon-inactive, table.ilist_widget_table td.ss-icon-active {
+		height: 28px !important;
+		padding: 3px 0 !important;
+	}
+    table.ilist_widget_table tbody td {
+        display: block !important;
+        text-align: center !important;
+    }
+    table.ilist_widget_table tbody td:before { 
+        content: attr(data-th); 
+        display: block !important;
+        text-align: center !important;  
+    }
+    table.ilist_widget_table tbody tr:nth-of-type(2n) {
+        background-color: transparent !important;
+        /*border: 1px solid grey !important;*/
+    }
+    table.ilist_widget_table tbody tr td {
+        /*border: 1px solid grey !important;*/
+    }
+    table.ilist_widget_table th {
+        /*background-color: #018DB1 !important;*/
+        /*font-weight: bold !important;*/
+        /*color: #fff !important;*/
+    }
+    table.ilist_widget_table tbody tr:nth-of-type(1) {
+        /*font-weight: bold !important;*/
+		display: none;
+    }
+	table.sales-jh tbody tr:nth-of-type(1) {
+		display: block;
+	}
+    table.ilist_widget_table table td:last-child {
+        /*border-bottom: 2px solid #BD1622 !important;*/
+    }
+	.ss-icon {
+		font-size: 20px;
+		padding: 0;
+		margin: 0;
+	}
+}
