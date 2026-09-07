@@ -110,7 +110,10 @@ $options = [
     ,'ilist_rewrite_rules_flushed' // Marqueur de flush des règles de réécriture
 ];
 foreach ( $options as $option ) {
-	if ( ilist_get_option( $option ) ) {
+	// Test sur !== false : une bonne partie des options valent '0' ou '' - donc
+	// falsy - et n'étaient jamais supprimées, la désinstallation laissant
+	// l'essentiel des réglages en base.
+	if ( ilist_get_option( $option ) !== false ) {
 		ilist_delete_option( $option );
 	}
 }
