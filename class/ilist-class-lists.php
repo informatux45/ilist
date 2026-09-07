@@ -67,7 +67,10 @@ class ilist_List_Table extends WP_List_Table {
         
         // Custom row actions
         if (has_filter('ilist_list_extra_row_actions')) {
-            $extra_row_actions = apply_filters( 'ilist_list_extra_row_actions', $first_actions );
+            // $item est passé en 2e argument depuis la 2.3.0 : sans lui, une
+            // action ajoutée ne peut pas cibler la liste de la ligne courante.
+            // Les callbacks à un seul argument restent compatibles.
+            $extra_row_actions = apply_filters( 'ilist_list_extra_row_actions', $first_actions, $item );
             $actions = array_merge($first_actions, $extra_row_actions);
         } else {
             $actions = $first_actions;

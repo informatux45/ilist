@@ -52,6 +52,8 @@ if (!function_exists("ilist_add_pages")) {
         add_submenu_page( ILIST_ID, ILIST_NAME . ' - ' . __( 'Share', ILIST_ID_LANGUAGES ), __( 'Share', ILIST_ID_LANGUAGES ), 'manage_options', 'ilist-share', 'ilist_share');
         // Submenu: Search
         add_submenu_page( ILIST_ID, ILIST_NAME . ' - ' . __( 'Search', ILIST_ID_LANGUAGES ), __( 'Search', ILIST_ID_LANGUAGES ), 'manage_options', 'ilist-search', 'ilist_search');
+        // Submenu: List statistics
+        add_submenu_page( ILIST_ID, ILIST_NAME . ' - ' . __( 'List statistics', ILIST_ID_LANGUAGES ), __( 'List statistics', ILIST_ID_LANGUAGES ), 'manage_options', 'ilist-statistics', 'ilist_statistics');
         // Submenu: Automatic emails
         add_submenu_page( ILIST_ID, ILIST_NAME . ' - ' . __( 'Automatic emails', ILIST_ID_LANGUAGES ), __( 'Automatic emails', ILIST_ID_LANGUAGES ), 'manage_options', 'ilist-emails', 'ilist_emails');
         // Submenu: 
@@ -74,6 +76,7 @@ if (!function_exists("ilist_nav_tabs")) {
 			,ILIST_ID . "-pot"         => __( 'Pot', ILIST_ID_LANGUAGES )
 			,ILIST_ID . "-share"       => __( 'Share', ILIST_ID_LANGUAGES )
 			,ILIST_ID . "-search"      => __( 'Search', ILIST_ID_LANGUAGES )
+			,ILIST_ID . "-statistics"  => __( 'List statistics', ILIST_ID_LANGUAGES )
 			,ILIST_ID . "-emails"      => __( 'Emails', ILIST_ID_LANGUAGES )
             ,ILIST_ID . "-changelog"   => __( 'Changelog', ILIST_ID_LANGUAGES )
             ,ILIST_ID . "-credits"     => __( 'Credits', ILIST_ID_LANGUAGES )

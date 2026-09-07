@@ -159,6 +159,9 @@ if ( !function_exists('ilist_install') ) {
 			,'ilist_print_open'             => '0'
 			,'ilist_print_head_text'        => ''
 			,'ilist_print_footer_text'      => ''
+			// --- STATISTICS (ex-addon "ILIST Kado - List Statistics")
+			,'ilist_statistics_admin' => '1'
+			,'ilist_statistics_front' => '1'
 			// --- SEARCH
 			,'ilist_email_search'       => '1'
 			,'ilist_name_search'        => '0'
@@ -190,12 +193,32 @@ if ( !function_exists('ilist_install') ) {
 		}
 
 		/**
-		 * Nettoyage des options devenues obsolètes
+		 * Migration et nettoyage des options
 		 *
 		 * Exécuté à chaque changement de version via ilist_update_db_check().
+		 * L'ordre compte : on reprend d'abord les valeurs de l'ancien addon
+		 * "ILIST Kado - List Statistics" (intégré au plugin le 2026-09-07),
+		 * PUIS on supprime ses options. Si l'addon n'a jamais été activé, la
+		 * reprise ne trouve rien et les valeurs par défaut posées plus haut
+		 * restent en place.
 		 */
+		$ilist_addon_sl_migration = [
+			 'ilist_statistics_sl_admin' => 'ilist_statistics_admin'
+			,'ilist_statistics_sl_front' => 'ilist_statistics_front'
+		];
+		foreach($ilist_addon_sl_migration as $ilist_old_option => $ilist_new_option) {
+			$ilist_old_value = ilist_get_option( $ilist_old_option );
+			if ( $ilist_old_value !== false ) {
+				ilist_update_option( $ilist_new_option, $ilist_old_value );
+			}
+		}
+
 		$ilist_obsolete_options = [
-			'ilist_license_key' // Système de licence retiré (le plugin est public)
+			 'ilist_license_key'             // Système de licence retiré (le plugin est public)
+			,'ilist_addon_sl_license_key'    // Licence de l'ex-addon Statistics
+			,'ilist_addon_sl_db_version'     // Suivi de version de l'ex-addon
+			,'ilist_statistics_sl_admin'     // Remplacée par ilist_statistics_admin
+			,'ilist_statistics_sl_front'     // Remplacée par ilist_statistics_front
 		];
 		foreach($ilist_obsolete_options as $ilist_obsolete_option) {
 			if ( ilist_get_option( $ilist_obsolete_option ) !== false ) {

@@ -108,6 +108,9 @@ $options = [
     ,'ilist_add_products_to_lists'
     ,'ilist_license_key' // Système de licence retiré (plugin public)
     ,'ilist_rewrite_rules_flushed' // Marqueur de flush des règles de réécriture
+    // STATISTICS (ex-addon "ILIST Kado - List Statistics")
+    ,'ilist_statistics_admin'
+    ,'ilist_statistics_front'
 ];
 foreach ( $options as $option ) {
 	// Test sur !== false : une bonne partie des options valent '0' ou '' - donc

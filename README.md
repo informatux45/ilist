@@ -32,6 +32,8 @@ mariage, anniversaire, Noël… — avec **financement participatif** (cagnotte)
   sujets et corps personnalisables par jetons.
 - Intégration à l'administration WooCommerce : colonne « Liste » sur la liste
   des commandes, encart et message de l'acheteur sur la fiche commande.
+- Statistiques de liste (ventes réalisées) — câblage en place depuis la 2.3.0,
+  contenu à définir.
 - API REST en lecture (`ilist/v2`).
 - Compatible **HPOS** (High-Performance Order Storage) et multisite.
 
@@ -62,9 +64,20 @@ modifier son code — chacun est documenté avec un exemple d'usage dans
 `ilist_pot_product_cart_title`, `ilist_pot_separator_text`,
 `ilist_pot_not_activated`, `ilist_protected_password_list_text`,
 `ilist_before_login`, `ilist_login`, `ilist_after_login`,
-`ilist_admin_list_products_after`, `ilist_extra_nav_tabs`.
+`ilist_admin_list_products_after`, `ilist_extra_nav_tabs`,
+`ilist_list_extra_row_actions`, `ilist_statistics_content`.
 
 ## Changelog
+
+**2.3.0**
+- Intégration de l'addon « ILIST Kado - List Statistics » : l'onglet
+  **Statistiques de liste**, l'action « Statistiques » du tableau des listes et
+  le bouton sous les produits font désormais partie du plugin. Le contenu des
+  statistiques reste à définir et se branche sur l'action
+  `ilist_statistics_content`.
+- Le filtre `ilist_list_extra_row_actions` reçoit désormais la ligne courante
+  en second argument, ce qui permet à une action ajoutée de cibler la liste
+  concernée. Les callbacks à un seul argument restent compatibles.
 
 **2.2.0**
 - Le plugin devient public : retrait complet du système de licence (plus de

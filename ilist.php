@@ -11,7 +11,7 @@
  * Plugin Name: 			ILIST Kado
  * Plugin URI:  			https://dev.informatux.com/woocommerce-ilist
  * Description: 			Gestion de listes de naissance, mariage, anniversaire, noel, etc. pour WooCommerce avec possibilités de financement participatif (crowdfunding)
- * Version:     			2.2.0
+ * Version:     			2.3.0
  * Author:      			DEV By INFORMATUX
  * Author URI:  			https://dev.informatux.com
  * Text Domain: 			ilist-translate
@@ -256,7 +256,7 @@ if (array_keys( $ilistAPIFiles, true )) {
 
 /** Create tab's plugin
 ============================================= */
-$ilistOptions = [ 'general', 'lists', 'list-types', 'list-products', 'sold', 'options', 'list', 'woocommerce', 'pot', 'share', 'search', 'emails', 'changelog', 'credits' ];
+$ilistOptions = [ 'general', 'lists', 'list-types', 'list-products', 'sold', 'options', 'list', 'woocommerce', 'pot', 'share', 'search', 'statistics', 'emails', 'changelog', 'credits' ];
 foreach ($ilistOptions as $ilistOption) {
 	$ilistOptionFile = ILIST_PATH . 'includes/' . ILIST_ID . '-' . $ilistOption . '.php';
 	if (file_exists($ilistOptionFile)) require_once($ilistOptionFile);
